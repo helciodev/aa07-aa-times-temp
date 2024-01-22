@@ -55,8 +55,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .interests-bar,
-  .main__nav {
+  .interests-bar {
     display: none;
   }
 }

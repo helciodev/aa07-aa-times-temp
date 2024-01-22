@@ -4,7 +4,7 @@ window.addEventListener("DOMContentLoaded", () => {
   cogIcon.addEventListener("click", (event) => {
     console.log("Gear clicked");
     event.stopPropagation();
-    document.querySelector(".pref").classList.remove("pref--hidden");
+    document.querySelector(".pref").classList.toggle("pref--hidden");
   });
 
   window.addEventListener("click", () => {
@@ -52,4 +52,4 @@ const daysOfTheWeek = {
 };
 
 const today = `${daysOfTheWeek[dayOfTheWeek]}, ${monthsOfTheYear[month]} ${day}, ${year}`;
-console.log(today);
+dateElement.innerHTML = `<span>${today}</span>`;

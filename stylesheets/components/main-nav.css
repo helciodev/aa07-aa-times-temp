@@ -1,1 +1,16 @@
 /* Your code here */
+.main__nav {
+  grid-column: 1/4;
+  align-self: start;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.main__nav ul {
+  display: flex;
+  gap: 24px;
+}
+
+.main__nav ul li a {
+  line-height: 12px;
+}
