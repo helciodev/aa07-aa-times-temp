@@ -53,3 +53,10 @@
   font-weight: bolder;
   font-size: 22px;
 }
+
+@media screen and (max-width: 1000px) {
+  .interests-bar,
+  .main__nav {
+    display: none;
+  }
+}

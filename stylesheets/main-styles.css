@@ -105,3 +105,15 @@ main {
   grid-template-columns: 2fr 1fr;
   margin-top: 30px;
 }
+
+@media screen and (max-width: 1200px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main__nav {
+    display: none;
+  }
+}
