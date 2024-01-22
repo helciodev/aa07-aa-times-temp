@@ -1,1 +1,55 @@
 /* Your code here */
+.interests-bar {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  margin-top: 15px;
+  padding: 15px 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 2fr 1fr 1fr;
+}
+.interests-bar__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.interests-bar__story-title h2 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.interests-bar__exchange-rate ul li a {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 0;
+}
+
+.interests-bar__exchange-rate ul li a span {
+  color: #58ab59;
+}
+.interests-bar__exchange-rate ul li:nth-of-type(2) {
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.interests-bar__story-title,
+.interests-bar__exchange-rate {
+  border-right: 1px solid #e2e2e2;
+}
+
+.interests-bar__exchange-rate,
+.interests-bar__image,
+.interests-bar__story-title,
+.interests-bar__temperature,
+.interests-bar__weather-image {
+  padding: 8px 5px;
+}
+
+.interest-bar__temperature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 22px;
+}

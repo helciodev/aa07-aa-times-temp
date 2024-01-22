@@ -11,7 +11,7 @@
 .masthead {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr) 25px;
   padding-top: 20px;
   align-items: end;
 }
@@ -82,4 +82,26 @@
 .masthead__today-paper {
   justify-content: flex-end;
   gap: 10px;
+}
+
+.main__nav {
+  grid-column: 1/4;
+  align-self: start;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.main__nav ul {
+  display: flex;
+  gap: 24px;
+}
+
+.main__nav ul li a {
+  line-height: 12px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 30px;
 }

@@ -27,3 +27,7 @@ main {
   max-width: 1400px;
   padding: 0 40px;
 }
+
+p {
+  line-height: 16px;
+}
