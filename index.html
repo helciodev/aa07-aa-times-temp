@@ -15,8 +15,16 @@
     <header>
       <div class="masthead">
         <div class="masthead__menu-and-search">
-          <div><i class="fa fa-bars"></i></div>
-          <div><i class="fa fa-search"></i></div>
+          <div><i class="fas fa-bars"></i></div>
+          <div><i class="fas fa-search"></i></div>
+          <div class="search-modal">
+            <input
+              type="search"
+              class="search-modal__input"
+              placeholder="Search"
+            />
+            <button class="search-model__go">Go</button>
+          </div>
         </div>
         <div class="masthead__little-technologies">
           <div>
@@ -29,7 +37,7 @@
         <div class="masthead__action-buttons">
           <button>SUBSCRIBE NOW</button>
           <button>LOG IN</button>
-          <div class="pref">
+          <div class="pref pref--hidden">
             <div class="pref__section">
               <div class="pref__section-header">Edition</div>
               <ul>

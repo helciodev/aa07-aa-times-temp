@@ -6,17 +6,18 @@ window.addEventListener("DOMContentLoaded", () => {
     event.stopPropagation();
     document.querySelector(".pref").classList.toggle("pref--hidden");
   });
+  const searchIcon = document.querySelector(".fas.fa-search");
+  searchIcon.addEventListener("click", (e) => {
+    console.log("Search clicked");
+    e.stopPropagation();
+    document
+      .querySelector(".search-modal")
+      .classList.toggle("search-modal--hidden");
+  });
 
   window.addEventListener("click", () => {
     console.log("HTML document clicked");
     document.querySelector(".pref").classList.add("pref--hidden");
-  });
-
-  const searchIcon = document.querySelector(".fa.fa-search");
-  searchIcon.addEventListener("click", () => {
-    console.log("Search clicked");
-    const modal = document.querySelector(".search-modal");
-    modal.classList.toggle("search-modal--hidden");
   });
 });
 
